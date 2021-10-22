@@ -1,33 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+header {
+    background: rgb(35, 35, 35);
+    width: 100%;
+    weight: normal;
 }
 
-
-body {
-    background:rgba(3, 21, 34, 0.877);
-    color: azure;
+button {
+    border-radius: 10px;
+    height: 30px;
+    border: none;
+    background: #eafa12;
+    color: rgb(55, 136, 55);
+    text-align: center;
 }
 
-.logo {
-    margin-left: 30%;
-    max-width: max-content;
-    width: 70%;
-    padding: 20px;
-}
-
-
-p {
-    color: rgb(221, 221, 32);
-    font-family: sans-serif;
-    margin-left: 20px;
-    font-size: 10pt;
-    padding: 20px;
-
-}
-
-.icons {
-    margin-left: 15%;
-    margin-top: 10px;;
-}
