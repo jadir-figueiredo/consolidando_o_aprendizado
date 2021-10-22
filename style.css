@@ -6,26 +6,28 @@
 
 
 body {
-   
+    background:rgba(3, 21, 34, 0.877);
+    color: azure;
 }
 
-form {
-    background-color:rgba(11, 63, 97, 0.877);
-    color: azure;
+.logo {
+    margin-left: 30%;
     max-width: max-content;
     width: 70%;
     padding: 20px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
 
-hr {
-    color: rgba(11, 63, 97, 0.877);
-}
 
-form p {
+p {
     color: rgb(221, 221, 32);
-    align-text: center;
+    font-family: sans-serif;
+    margin-left: 20px;
+    font-size: 10pt;
+    padding: 20px;
+
+}
+
+.icons {
+    margin-left: 15%;
+    margin-top: 10px;;
 }
