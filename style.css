@@ -12,6 +12,7 @@
     --blue: #4f7ec5;
     --pink: #a066a0;
     --green: #548f78;
+    --azure: #f0ffff;
 }
 
 html, body {
@@ -21,7 +22,7 @@ html, body {
 
 header {
     width: 100%;
-    height: 200px;
+    height: 180px;
     background: var(--black);
 }
 
@@ -32,22 +33,58 @@ header {
     
 }
 
+img {
+    cursor: pointer;
+}
+
 nav {
   width: 100%;
   height: 125px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
-button {
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav img {
+    padding-left: 50px;
+    margin-top: 50px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav ul li a {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    border-radius: 10px;
-    border: none;
-    background-image: linear-gradient(to right, #d1dd8d,#9fddc5,#b1d5e4 );
-    padding: 10px;
-    font-family: sans-serif;
-
+    text-decoration: none;
+    padding-left: 50px;
+    margin-top: 50px;
 }
+
+nav ul button {
+    border: 1px solid var(--green);
+    background: transparent;
+    padding: 8px 40px;
+    cursor: pointer;
+    margin-left: 30px;
+    color: var(--green);
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+nav ul button:hover {
+    transition: background, color 1s;
+    background: var(--green);
+    color: var(--azure);
+
+} 
