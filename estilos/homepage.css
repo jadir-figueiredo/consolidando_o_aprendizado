@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Fengardo Neue';
+    src: url('/fontes/FengardoNeue_Regular.otf') format('opentype');
+    src: url('/fontes/FengardoNeue_Black.otf') format('opentype');
+    font-weight: normal;
+
+}
+
+:root {
+    --background: #2B3438;
+    --buttons: #3E7085;
+    --buttons-hover: #264552;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #232323;
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-color: var(--background);
+    color: white;
+}
+
+nav a button {
+    background-color: var(--buttons);
+    border: none;
+    margin: 10px 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
