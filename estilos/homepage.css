@@ -12,8 +12,10 @@
     --background: #191B40;
     --buttons: #025E73;
     --buttons-hover: #023859;
+    --color-hover: #F2C029;
 
     --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-destaque: 'Fengardo Neue', sans-serif;
 }
 
 * {
@@ -22,17 +24,16 @@
 }
 
 body {
-    background-color: #232323;
+    background-color: var(--background);
     font-family: var(--fonte-padrao);
     font-size: 16px;
 }
 
-header, main, footer {
+header {
     background-color: var(--background);
     padding: 20px;
-    border-radius: 5px;
     min-width: 320px;
-    max-width: 1200px;
+    max-width: 1420px;
     margin: auto;
 }
 
@@ -44,10 +45,13 @@ header > nav {
 
 header > img {
     width: 100%;
+    margin: 20px 0 20px 0;
+
 }
 
 header > p {
     color: azure;
+    padding: 20px;
     text-align: center;
     font-style: italic;
     font-size: 0.9em;
@@ -60,21 +64,71 @@ nav a button {
     border-radius: 5px;
     font-weight: bold;
     color: azure;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 nav a button:hover {
     background-color: var(--buttons-hover);
-    transition: 0.5s;
+    color: var(--color-hover);
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.473);
+}
+
+main {
+    background-color: var(--background);
+    padding: 20px;
+    min-width: 320px;
+    max-width: 1420px;
+    margin: auto;
+}
+
+main p {
+    margin: 15px 0;
+    text-align: justify;
+    color: azure;
 }
 
 main > h1 {
+    font-family: var(--fonte-destaque);
+    padding-bottom: 60px;
     color: azure;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-main > h2 p {
+main > h2 {
+    font-family: var(--fonte-destaque);
     color: azure;
+}
+
+main a button {
+    background-color: var(--buttons);
+    border: none;
+    margin: 10px 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: azure;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+main a button:hover {
+    background-color: var(--buttons-hover);
+    color: var(--color-hover);
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.473);
+}
+
+main iframe {
     display: flex;
-    justify-content: right;
+    flex-direction: row-reverse;
+
+}
+
+footer {
+    background-color: var(--background);
+    padding: 20px;
+    min-width: 320px;
+    max-width: 1420px;
+    margin: auto;
 }
