@@ -95,12 +95,6 @@ ul li {
     cursor: pointer;
 }
 
-ul li:hover {
-    transition: 0.5s;
-    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.473);
-    
-}
-
 main > h1 {
     font-family: var(--fonte-destaque);
     padding-bottom: 40px;
@@ -110,7 +104,6 @@ main > h1 {
 }
 
 aside {
-    
     padding: 10px;
     columns: 2;
 }
