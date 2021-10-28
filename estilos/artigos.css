@@ -54,7 +54,7 @@ header > p {
     padding: 20px;
     text-align: center;
     font-style: italic;
-    font-size: 0.9em;
+    font-size: 1.1em;
 }
 nav a button {
     background-color: var(--buttons);
@@ -76,18 +76,11 @@ nav a button:hover {
     box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.473);
 }
 
-main {
-    padding: 40px;
-    min-width: 320px;
-    max-width: 1420px;
-    margin: auto;
-}
-
 ul {
+    margin: 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-bottom: 30px;
     list-style-type: none;
 }
 
@@ -98,19 +91,39 @@ ul li {
 
 main > h1 {
     font-family: var(--fonte-destaque);
-    padding-bottom: 40px;
+    font-size: 2.5em;
     color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+article {
+    background-color: var(--buttons);
+    width: 500px;
+    height: 250px;
+    margin: 30px;
+    border-radius: 5px;
+    columns: 2;
+}
+
+article:hover {
+    box-shadow: 5px 5px 7px var(--buttons-hover);
+    transition: 0.5s;
+}
+
+img, a, p {
+    padding: 20px;
+}
+
+a, p {
     display: flex;
     justify-content: space-evenly;
 }
 
-aside h2 {
+a {
     color: white;
-    text-align: center;
-    margin: 50px ;
+    font-size: 1.2em;
+    text-decoration: none;
 }
 
-aside > ul {
-    background-color: var(--buttons);
-    columns: 2;
-}
