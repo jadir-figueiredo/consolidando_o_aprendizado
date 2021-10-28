@@ -76,7 +76,6 @@ nav a button:hover {
 }
 
 main {
-    background-color: var(--background);
     padding: 40px;
     min-width: 320px;
     max-width: 1420px;
@@ -108,6 +107,7 @@ aside {
     margin: 50px;
     padding: 10px;
     columns: 2;
+    min-width: 600px;
 }
 
 
