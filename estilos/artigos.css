@@ -103,3 +103,14 @@ main > h1 {
     display: flex;
     justify-content: space-evenly;
 }
+
+aside h2 {
+    color: white;
+    text-align: center;
+    margin: 50px ;
+}
+
+aside > ul {
+    background-color: var(--buttons);
+    columns: 2;
+}
