@@ -124,17 +124,39 @@ tr th {
     padding: 20px;
 }
 
-table a {
+.title a {
     color: var(--color-hover);
     font-size: 1.2em;
     text-decoration: none;
-    padding: 30px;
     display: flex;
     text-align: left;
+    margin-bottom: 15px;
 }
 
-a:hover {
+.title:hover {
     text-decoration: underline;  
+    transition: 0.5s;
+}
+
+.author {
+    display: flex;
+    justify-content: flex-start
+}
+
+.author a {
+    color: white;
+    display: flex;
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    font-style: italic;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.author a:hover {
+    color: var(--color-hover);
+    text-decoration: underline;
     transition: 0.5s;
 }
 
@@ -142,4 +164,8 @@ table p {
     display: flex;
     text-align: left;
     color: white;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    font-style: italic;
 }
+
