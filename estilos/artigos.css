@@ -77,16 +77,23 @@ nav a button:hover {
 }
 
 ul {
-    margin: 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-bottom: 30px;
     list-style-type: none;
 }
 
 ul li {
     padding: 10px;
     cursor: pointer;
+}
+
+main {
+    padding: 40px;
+    min-width: 320px;
+    max-width: 1420px;
+    margin: auto;
 }
 
 main > h1 {
@@ -98,32 +105,41 @@ main > h1 {
     margin-bottom: 40px;
 }
 
-article {
+table {
     background-color: var(--buttons);
-    width: 500px;
-    height: 250px;
-    margin: 30px;
-    border-radius: 5px;
+    width: 800px;
+    margin: auto;
+    border-radius: 10px;
     columns: 2;
+    min-width: 320px;
+    max-width: 1420px;
 }
 
-article:hover {
-    box-shadow: 5px 5px 7px var(--buttons-hover);
+table:hover {
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.473);    
     transition: 0.5s;
 }
 
-img, a, p {
+tr th {
     padding: 20px;
 }
 
-a, p {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-a {
-    color: white;
+table a {
+    color: var(--color-hover);
     font-size: 1.2em;
     text-decoration: none;
+    padding: 30px;
+    display: flex;
+    text-align: left;
 }
 
+a:hover {
+    text-decoration: underline;  
+    transition: 0.5s;
+}
+
+table p {
+    display: flex;
+    text-align: left;
+    color: white;
+}
